@@ -74,9 +74,29 @@ body{
    column-gap: 20px;
     
 }
+.section-flex .active{
+    background-color: tomato;
+}
+.view-all{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.view-all a{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 15px;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    display: none;
+}
 .side-button{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
     padding: 1.3vw;
@@ -134,9 +154,7 @@ body{
 .player h3{
     margin: 0 15px;
 }
-.section-flex .active{
-    background-color: tomato;
-}
+
 .time-chat{
     display: flex;
     column-gap: 15px;
@@ -173,7 +191,7 @@ footer{
     opacity: 20%;
 }
 .last-ref{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -185,10 +203,49 @@ footer{
     color: lightgoldenrodyellow;
     font-size: 18px;
 }
+.social-icon{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+.social-icon a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+
+}
+.upcoming{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.upcoming .flag{
+    display: flex;
+    column-gap: 7%;
+    margin: 0 auto;
+}
+.flag img{
+    width: 30%;
+    height: 50px;
+}
 @media screen and (max-width:688px) {
     .header-1{
         grid-template-columns: 1fr;
         column-gap: 20px;
+    }
+    .text-header{
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+        row-gap: 10px;
     }
     .section-flex{
         grid-template-columns: 1fr;
@@ -198,13 +255,16 @@ footer{
         grid-template-columns: 1fr;
     }
     .side-button{
-        width: 100%;
+       
         margin: 0 auto;
         padding-top: 30px;
         padding-bottom: 30px;
+        flex-direction: column;
+        
     }
     .side-button a{
         width: 80%;
+        margin: 0 auto;
     }
     .header-image img{
         width: 100%;
@@ -216,6 +276,9 @@ footer{
     .text-header{
         padding: 40px 20px;
        
+    }
+    .social-icon a{
+        font-size: 16px;
     }
 }
 
@@ -230,12 +293,12 @@ footer{
     .side-button{
         width: 100%;
         margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-radius: 0;
+        padding:20px;
+        border-radius: 10px;
         background-color: black;
-        grid-template-columns: repeat(3,1fr);
         column-gap: 7px;
+        justify-content: center;
+        flex-direction: row;
     }
     .header-text-size{
         font-size: 2.3em;
@@ -251,6 +314,10 @@ footer{
     
     .side-button a{
         width: 90%;  
+       
+    }
+    .view-all a{
+        display: flex;
        
     }
 }

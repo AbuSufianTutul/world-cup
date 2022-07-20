@@ -38,6 +38,7 @@ body{
 .header-para-text{
     font-weight: 100;
     padding-bottom: 20px;
+    margin: 15px 0;
 }
 .text-header{
     color: white;
@@ -88,6 +89,7 @@ body{
 .side-button a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     background-color: white;

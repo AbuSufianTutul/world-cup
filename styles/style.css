@@ -20,7 +20,8 @@ body{
    
 }
 .header-1{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
      width: 80%;
      margin: 40px auto;
     background-image: linear-gradient(black,rgb(20, 4, 4),black);
@@ -30,6 +31,7 @@ body{
 .header-text-size{
     font-size: 3em;
     font-weight: 700;
+    margin-top: 60px;
 }
 .header-para-text{
     font-weight: 100;
@@ -43,9 +45,12 @@ body{
 }
 
 .header-image img{
-    width: 500px;
+    width: 100%;
     padding-right: 30px; 
     padding-top: 45px;
+}
+.header{
+    width: 100%;
 }
 .btn-1{
     text-decoration: none;
@@ -176,7 +181,7 @@ footer{
 }
 @media screen and (max-width:688px) {
     .header-1{
-        flex-direction: column;
+        grid-template-columns: 1fr;
         column-gap: 20px;
     }
     .section-flex{
@@ -197,5 +202,9 @@ footer{
     .last-ref{
         flex-direction: column;
         text-align: center;
+    }
+    .text-header{
+        padding: 40px 20px;
+       
     }
 }
